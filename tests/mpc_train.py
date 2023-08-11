@@ -34,7 +34,7 @@ A = env.A
 B = env.B
 episodes = 10000
 
-nn_controller = NNController((2*n,), n, 64, 64)
+nn_controller = NNController((2*n,), n, 8, 8)
 nnOptimizer = tf.keras.optimizers.Adam(learning_rate=1e-4)
 nn_controller.compile(optimizer=nnOptimizer)
 dummy_state = np.ones((1, 2*n), dtype=np.float32)

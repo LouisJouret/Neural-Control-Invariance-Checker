@@ -67,7 +67,7 @@ def is_limitroph(polytope, input_space, obstacles):
     return False
 
 
-def expand_polytope_to_2D(polytope, n):
+def expand_polytope_from_2D_to_2nD(polytope, n):
     m, l = polytope.A.shape
     A = np.zeros((n * m, n * l))
     B = np.zeros((n * m, 1))

@@ -14,9 +14,9 @@ class Agent():
         self.actionDim = num_actions
         self.stateDim = (num_states,)
         self.actorMain = NNController(
-            self.stateDim, self.actionDim, 32, 32)
+            self.stateDim, self.actionDim, 128, 128)
         self.actorTarget = NNController(
-            self.stateDim, self.actionDim, 32, 32)
+            self.stateDim, self.actionDim, 128, 128)
         self.criticMain = Critic(self.stateDim, 1)
         self.criticTarget = Critic(self.stateDim, 1)
 

@@ -35,4 +35,4 @@ class Critic(tf.keras.Model):
 
     def save_model(self):
         print("saving critic model ...")
-        self.save("Ddpg/critic")
+        self.save("tests/ddpg_utils/critic")

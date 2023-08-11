@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import polytope as pc
-import nn_invariance_check as nci
+import nci_checker as nci
 
 ####### Dynamic System #######
 # The should be characterized by two matrices A and B such that x_next = Ax + B.
@@ -32,7 +32,7 @@ nn_controller = tf.keras.models.load_model("tests/nn_controller")
 # O is the union of all convex polytopic obstacles. O should be expressed as a list of polytopes.
 
 ### Uncomment for MassSpringDamper ###
-# S = invariance_approach.expand_polytope_to_2D(
+# S = nci.expand_polytope_from_2D_to_2nD(
 #     pc.qhull(np.array([[0, 0], [1, 1], [1, -1]])), n)
 # O = None
 ######################################

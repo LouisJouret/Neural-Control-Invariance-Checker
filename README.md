@@ -29,6 +29,8 @@ The **Neural Control Invariance Checker** is a Python package designed to assess
     `python setup.py install`
 
 ## Usage
+
+Three linear dynamical systems are provided on which you can test your neural network controller. The neural networks can be trained in the tests/ directory by either approximating classical controllers like MPC or by reinforcement learning like DDPG. Finally the linear regions and invariance check can by used as follow:
 ```
 import neural_control_invariance_checker as nci
 
@@ -37,4 +39,4 @@ linear_regions, good_vertices, bad_vertices = nci.check_controller_safety(S, O, 
 ```
 
 ## Examples
-Visit the tests/ directory in this repository for examples and demonstrations of how to use the package to analyze different controlled linear systems with neural network controllers.
+Visit the tests/test.py file for an inuitive example of how the package should be used.

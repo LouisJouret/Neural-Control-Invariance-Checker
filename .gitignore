@@ -2,3 +2,6 @@
 env/
 .vscode/
 __pycache__/
+dist
+build
+nci_checker.egg-info
