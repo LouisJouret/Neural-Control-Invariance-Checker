@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import polytope as pc
-import nn_invariance_check as nic
+import nn_invariance_check as nci
 
 ####### Dynamic System #######
 # The should be characterized by two matrices A and B such that x_next = Ax + B.
@@ -25,7 +25,7 @@ B = env.B
 
 ####### FNN Controller #######
 # The controller should be loaded from a Tensorflow SavedModel file.
-nn_controller = tf.keras.models.load_model("nn_controller")
+nn_controller = tf.keras.models.load_model("tests/nn_controller")
 
 ####### Verification set #######
 # The set that will be verified should be expressed as S\O where S is a convex polytope and
@@ -43,7 +43,7 @@ O = [pc.qhull(np.array(env.get_obstacle_vertices(1))),
 
 
 ####### Check Controller Safety #######
-regions, good_vertices, bad_vertices = nic.check_controller_safety(
+regions, good_vertices, bad_vertices = nci.check_controller_safety(
     S, O, nn_controller, A, B)
 
 ##### Visualization #####

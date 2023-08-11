@@ -13,20 +13,20 @@ The **Neural Control Invariance Checker** is a Python package designed to assess
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/LouisJouret/neural-control-invariance-checker.git
+   git clone https://github.com/LouisJouret/Neural-Control-Invariance-Checker.git
    ```
 
 2. Navigate to the package directory:
 
-    'cd neural-control-invariance-checker'
+    `cd neural-control-invariance-checker`
 
 3. Install the dependencies:
     
-    'pip install -r requirements.txt'
+    `pip install -r requirements.txt`
 
 4. Install the package:
 
-    'python setup.py install'
+    `python setup.py install`
 
 ## Usage
 ```
