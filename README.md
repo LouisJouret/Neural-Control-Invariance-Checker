@@ -1,6 +1,6 @@
 # Neural Control Invariance Checker
 
-The **Neural Control Invariance Checker** is a Python package designed to assess the invariance properties of a controlled linear system when governed by a neural network controller. This package provides tools to analyze and evaluate the behavior of the system-controller combination in various scenarios.
+The **Neural Control Invariance Checker** is a Python package designed to assess the invariance properties of a controlled linear system when governed by a neural network controller. This package provides tools to analyze and evaluate the behavior of the system-controller combination in various scenarios. The theory behind the code has been established in a paper called "Safety Verification of Neural-Network-Based Controllers: A Set Invariance Approach". It can be found here: https://ieeexplore.ieee.org/document/10354438. You can also find the pre-print version on arXiv: https://arxiv.org/abs/2312.11352.
 
 ## Features
 
